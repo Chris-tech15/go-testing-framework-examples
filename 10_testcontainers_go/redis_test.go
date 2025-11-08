@@ -59,7 +59,7 @@ func TestRedisContainer(t *testing.T) {
 	client := redis.NewClient(&redis.Options{
 		Addr: redisAddr,
 	})
-	defer client.Close()
+	defer func() { _ = client.Close() }()
 
 	// Test Redis operations
 	t.Run("SET and GET operations", func(t *testing.T) {
@@ -277,7 +277,7 @@ func TestRedisContainer_MultipleOperations(t *testing.T) {
 	client := redis.NewClient(&redis.Options{
 		Addr: fmt.Sprintf("%s:%s", host, port.Port()),
 	})
-	defer client.Close()
+	defer func() { _ = client.Close() }()
 
 	// Simulate a user session management scenario
 	t.Run("User session management", func(t *testing.T) {

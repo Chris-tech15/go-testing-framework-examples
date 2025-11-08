@@ -54,13 +54,12 @@ func createAPIHandler() http.Handler {
 
 		// Simple routing - in real app use a router library
 		id := r.URL.Path[len("/users/"):]
-		if id == "1" {
+		switch id {
+		case "1":
 			user := User{ID: 1, Name: "John Doe", Email: "john@example.com"}
 			w.Header().Set("Content-Type", "application/json")
 			_ = json.NewEncoder(w).Encode(user)
-		} else if id == "999" {
-			http.Error(w, "User not found", http.StatusNotFound)
-		} else {
+		default:
 			http.Error(w, "User not found", http.StatusNotFound)
 		}
 	})
