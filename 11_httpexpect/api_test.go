@@ -100,7 +100,7 @@ func TestHealthEndpoint(t *testing.T) {
 		Expect().
 		Status(http.StatusOK).
 		JSON().Object().
-		ValueEqual("status", "healthy")
+		HasValue("status", "healthy")
 }
 
 // TestListUsers demonstrates testing a list endpoint.
@@ -114,7 +114,7 @@ func TestListUsers(t *testing.T) {
 	obj := e.GET("/users").
 		Expect().
 		Status(http.StatusOK).
-		ContentType("application/json").
+		HasContentType("application/json").
 		JSON().Array()
 
 	// Verify array length
@@ -122,14 +122,14 @@ func TestListUsers(t *testing.T) {
 
 	// Verify first user
 	obj.Value(0).Object().
-		ValueEqual("id", 1).
-		ValueEqual("name", "John Doe").
-		ValueEqual("email", "john@example.com")
+		HasValue("id", 1).
+		HasValue("name", "John Doe").
+		HasValue("email", "john@example.com")
 
 	// Verify second user
 	obj.Value(1).Object().
-		ValueEqual("id", 2).
-		ValueEqual("name", "Jane Smith")
+		HasValue("id", 2).
+		HasValue("name", "Jane Smith")
 }
 
 // TestGetUser demonstrates testing a specific resource endpoint.
@@ -213,7 +213,7 @@ func TestWithHandler(t *testing.T) {
 		Expect().
 		Status(http.StatusOK).
 		JSON().Object().
-		ValueEqual("status", "healthy")
+		HasValue("status", "healthy")
 }
 
 // TestJSONAssertions demonstrates various JSON assertion methods.
@@ -250,8 +250,8 @@ func TestJSONAssertions(t *testing.T) {
 
 	// Test nested objects
 	obj.Value("address").Object().
-		ValueEqual("city", "New York").
-		ValueEqual("country", "USA")
+		HasValue("city", "New York").
+		HasValue("country", "USA")
 
 	// Test arrays
 	tags := obj.Value("tags").Array()
@@ -341,8 +341,8 @@ func TestQueryParameters(t *testing.T) {
 		Expect().
 		Status(http.StatusOK).
 		JSON().Object().
-		ValueEqual("filter", "active").
-		ValueEqual("limit", "10")
+		HasValue("filter", "active").
+		HasValue("limit", "10")
 }
 
 // TestChainedRequests demonstrates making multiple related requests.
@@ -370,5 +370,5 @@ func TestChainedRequests(t *testing.T) {
 		Expect().
 		Status(http.StatusOK).
 		JSON().Object().
-		ValueEqual("name", "John Doe")
+		HasValue("name", "John Doe")
 }
